@@ -1,0 +1,63 @@
+.header {
+
+    background: #1e2b3d url(../../destino/imagens/MinionsCapa.webp) no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+    @media (min-width: 600px) {
+        background-size: cover;
+    }
+
+    &__content {
+        width: 80%;
+        margin: auto;
+        padding-top: 2vh;
+
+        &__links {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 60%;
+            background-color: #fff;
+            transition: 1s;
+            
+            &__item {
+                padding: 16px;
+            }
+            
+            #fechar {
+                color: #1e2b3d;
+                font-size: 2em;
+                padding: 16px;
+            }
+            
+            a {
+                color: #1e2b3d;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    &__sobre {
+        width: 80%;
+        margin: auto;
+
+        .button {
+            display: block;
+            text-align: center;
+            background-color: #9199A3;
+            padding: 8px 16px;
+            margin: 30px 0;
+            border-radius: 5px;
+            font-size: 1.5em;
+            transition: .5s;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+    
+            &:hover {
+                background-color: #9199a3d0;
+            }
+        }
+    }
+}
+

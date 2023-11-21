@@ -1,0 +1,18 @@
+.onde-assistir {
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 18%;
+    }
+}
+
+.elenco {
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        img {
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@use 'header';
+@use 'historia';
+@use 'filmes';
+@use 'assistir_elenco';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1e2b3d;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.titulo {
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-size: 3em;
+    margin: 56px 0 32px;
+}
+
+.txt-secundario {
+    color: grey;
+    margin-top: 8px;
+}
+
+
+.is-active {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 8px;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
