@@ -4,9 +4,9 @@ const btnFechar = document.getElementById('btnFechar');
 
 
 abrir.addEventListener('click', function() {
-    btnFechar.style.opacity = '1';
+    btnFechar.style.maxWidth = '100%';
 });
 
-fechar.addEventListener('click', function(){
-    btnFechar.style.opacity = '0';
+btnFechar.addEventListener('click', function(){
+    btnFechar.style.maxWidth = '0';
 })

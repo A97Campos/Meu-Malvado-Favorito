@@ -1,8 +1,8 @@
 .onde-assistir {
     &__content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 18%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;        
     }
 }
 
@@ -10,9 +10,59 @@
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5%;
-        img {
-            border-radius: 10px;
+        
+        &__img {
+            background-color: #D097F7;
+            border-radius: 8px;
+            margin: 0 24px 16px 0;
+            padding: 8px;
+            width: 150px;
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+                margin-bottom: 8px;                
+            }
         }
+    }
+
+    .button {
+        border: none;
+        width: 100%;
+        cursor: pointer;
+    }    
+}
+
+#esconder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+
+@media (min-width: 768px){   
+
+    .overflow {
+        display: flex;
+        overflow-x: scroll;
+        
+
+        .elenco__content {
+            display: flex;
+        }
+
+        #esconder {
+            display: flex;
+            height: 100%;
+            opacity: 1;
+            overflow: visible;
+        }
+    }
+
+    #mudarTexto {
+        display: none;
     }
 }

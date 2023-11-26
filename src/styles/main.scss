@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #1e2b3d;
+    background-color: #695378;
 }
 
 section {
@@ -26,11 +26,37 @@ section {
     font-family: 'Baloo Bhaijaan 2', sans-serif;
     font-size: 3em;
     margin: 56px 0 32px;
+    color: #F7D497;
+
+    @media (min-width: 768px){
+        font-size: 4em;
+    }
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background-color: #F7EB97;
+    color: #695378;
+    padding: 8px 16px;
+    margin: 30px 0;
+    border-radius: 5px;
+    font-size: 1.5em;
+    transition: .5s;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+
+    &:hover {
+        letter-spacing: 1px;
+    }
 }
 
 .txt-secundario {
-    color: grey;
+    color: #F7EB97;
     margin-top: 8px;
+    
+    @media (min-width: 768px){
+        margin-top: 16px;
+    }
 }
 
 
@@ -41,5 +67,22 @@ section {
 
 .material-symbols-outlined {
     cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    background-color: #D097F7;
+    border-radius: 8px;        
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F7D497;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px){
+    .texto {
+        font-size: 1.5em;
+    }
 }
 
