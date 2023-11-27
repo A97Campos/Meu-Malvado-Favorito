@@ -4,7 +4,7 @@
     &__titulos {
         ul {
             display: flex;
-            justify-content: space-between;          
+            justify-content: space-around;          
             margin-bottom: 56px;
             
             li {
@@ -22,9 +22,8 @@
         }
 
         &__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2.5%;
+            display: flex;
+            justify-content: space-around;
         }
 
         #filmesMeuMalvadoFavorito {

@@ -1,13 +1,5 @@
 .historia {
 
-    &__grid {
-        @media (min-width: 992px){
-            display: grid;
-            grid-template-columns: 50% 45%;
-            gap: 5%;
-        }
-    }
-
     img {
         width: 100%;
         margin-bottom: 24px;
@@ -16,5 +8,13 @@
 
     .strong {
         color: #F7EB97;
+    }
+}
+
+@media (min-width: 992px){
+    .historia__grid {
+        display: grid;
+        grid-template-columns: 50% 45%;
+        gap: 5%;
     }
 }

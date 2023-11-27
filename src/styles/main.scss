@@ -2,6 +2,7 @@
 @use 'historia';
 @use 'filmes';
 @use 'assistir_elenco';
+@use 'footer';
 
 * {
     margin: 0;
@@ -27,10 +28,6 @@ section {
     font-size: 3em;
     margin: 56px 0 32px;
     color: #F7D497;
-
-    @media (min-width: 768px){
-        font-size: 4em;
-    }
 }
 
 .button {
@@ -53,10 +50,6 @@ section {
 .txt-secundario {
     color: #F7EB97;
     margin-top: 8px;
-    
-    @media (min-width: 768px){
-        margin-top: 16px;
-    }
 }
 
 
@@ -67,8 +60,24 @@ section {
 
 .material-symbols-outlined {
     cursor: pointer;
+    font-size: 2.5em;
 }
 
+#icon-fixed {
+    color: #695378;
+    background-color: #F7D497;
+    border-radius: 50%;    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    animation: mover 3s ease-in-out infinite;
+}
+
+@keyframes mover {
+    0% {bottom: 30px;}
+    50% {bottom: 40px;}
+    100% {bottom: 30px;}
+}
 
 ::-webkit-scrollbar {
     background-color: #D097F7;
@@ -81,6 +90,12 @@ section {
 }
 
 @media (min-width: 768px){
+    .titulo {    
+        font-size: 4em;
+    }
+    .txt-secundario {        
+        margin-top: 16px;
+    }
     .texto {
         font-size: 1.5em;
     }
